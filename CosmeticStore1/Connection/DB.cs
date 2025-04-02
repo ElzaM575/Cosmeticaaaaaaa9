@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CosmeticStore1.Connection
 {
     internal class DB
     {
-        public static 
+        p
     }
 }
