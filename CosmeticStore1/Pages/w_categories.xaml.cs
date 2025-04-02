@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
-
+using CosmeticStore1.Connection;
 namespace CosmeticStore1.Pages
 {
     /// <summary>
@@ -25,7 +25,26 @@ namespace CosmeticStore1.Pages
         public w_categories()
         {
             InitializeComponent();
+            categoriesList = new List<w_categories>();
         }
-        
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Создаем нового клиента
+            var newClient = new clients();
+
+            // Открываем диалоговое окно для ввода данных нового клиента
+            var dialog = new ClientDialog(newClient);
+        }
+
+        private void DeletButton_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

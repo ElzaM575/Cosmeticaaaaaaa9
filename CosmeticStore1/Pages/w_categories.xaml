@@ -13,16 +13,19 @@
         <TextBox x:Name="CategoryDescriptionTextBox" />
         <DataGrid x:Name="CategoriesDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding categoriesList}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding category_id}" />
-                <DataGridTextColumn Header="Название" Binding="{Binding name}" />
-                <DataGridTextColumn Header="ID родительской категории" Binding="{Binding parent_category_id}" />
+                <DataGridTextColumn Header="ID" 
+                                    Binding="{Binding category_id}" />
+                <DataGridTextColumn Header="Название" 
+                                    Binding="{Binding name}" />
+                <DataGridTextColumn
+                    Header="ID родительской категории" 
+                    Binding="{Binding parent_category_id}" />
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10">
-            <Button Content="Добавить" Margin="5,0" />
-            <Button Content="Изменить" Margin="5,0" />
-            <Button Content="Удалить" Margin="5,0" />
-            <Button Content="Сохранить"  Margin="5,0" />
+            <Button Content="Добавить" Margin="5,0" Click="AddButton_Click" />
+            <Button Content="Удалить" Margin="5,0" Click="DeletButton_Click_1" />
+            <Button Content="Сохранить"  Margin="5,0" Click="Button_Click_2" />
         </StackPanel>
     </Grid>
 </Page>

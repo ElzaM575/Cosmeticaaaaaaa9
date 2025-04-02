@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace CosmeticStore1.Connection
 {
-    internal class DB
+    internal class DBCosm
     {
-        p
+        public static СosmeticsStoreEntities cosm = new СosmeticsStoreEntities();
     }
 }

@@ -63,7 +63,7 @@
     <Compile Include="Connection\clients.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Connection\DB.cs" />
+    <Compile Include="Connection\DBCosm.cs" />
     <Compile Include="Connection\employees.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -105,6 +105,9 @@
     </Compile>
     <Compile Include="Connection\sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClientDialog.xaml.cs">
+      <DependentUpon>ClientDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Cosmetic.xaml.cs">
       <DependentUpon>Cosmetic.xaml</DependentUpon>
@@ -151,6 +154,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\ClientDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Cosmetic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

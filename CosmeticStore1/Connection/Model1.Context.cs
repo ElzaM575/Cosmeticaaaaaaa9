@@ -13,10 +13,10 @@ namespace CosmeticStore1.Connection
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class СosmeticsStoreEntities3 : DbContext
+    public partial class СosmeticsStoreEntities : DbContext
     {
-        public СosmeticsStoreEntities3()
-            : base("name=СosmeticsStoreEntities3")
+        public СosmeticsStoreEntities()
+            : base("name=СosmeticsStoreEntities")
         {
         }
     
